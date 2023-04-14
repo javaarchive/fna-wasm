@@ -61,7 +61,7 @@ RUN mkdir fnalibs
 WORKDIR /fnalibs
 
 # SDL2
-RUN git clone https://github.com/libsdl-org/SDL
+RUN git clone https://github.com/libsdl-org/SDL -b SDL2
 WORKDIR /fnalibs/SDL
 RUN mkdir emscripten-build
 WORKDIR /fnalibs/SDL/emscripten-build
